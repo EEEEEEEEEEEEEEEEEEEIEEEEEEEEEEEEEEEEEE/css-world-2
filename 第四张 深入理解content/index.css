@@ -1,0 +1,8 @@
+img{
+	display: block;
+	outline: 1px solid;
+}
+img::after{
+	content: '21';
+	
+}

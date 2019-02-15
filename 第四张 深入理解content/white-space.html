@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		<p>white-space这个css样式，用来设置element元素对内容中的空格的处理方式</p>
+		<p>有着几个可选值：normal,nowrap,pre,pre-wrap,pre-line。</p>
+		<p>没有设置white-space属性，则默认为white-space:normal。</p>
+		<h3>normal表示合并空格，多个相邻空格合并成一个空格，在源码中的换行作为空格处理，只会根据容器的大小进行自动换行</h3>
+	</div>
+	
+	<div>
+		<h1>white-space:normal合并空格 自动换行</h1>
+		<div class="wscont2">
+		    妹纸前端测试white-space属性,
+		    white-space属性的keywrod值。
+		</div>
+		<style type="text/css">
+			.wscont2{
+			    margin:12px;
+			    padding:12px;
+			    width:300px;
+			    background:#f1f1f1;
+			    border:1px solid #bababa;
+			    line-height:32px;
+			    font-size: 15px;
+			    font-family: "微软雅黑";
+			    white-space: normal;
+			}
+		</style>
+	</div> 
+	
+	<div>
+		<h1>white-space:nowrap不换行</h1>
+		<div class="wscont">
+		    妹纸前端测试white-space属性,
+		    white-space属性的keywrod值。
+		</div>
+		<style type="text/css">
+			.wscont{
+			    margin:12px;
+			    padding:12px;
+			    width:300px;
+			    background:#f1f1f1;
+			    border:1px solid #bababa;
+			    line-height:32px;
+			    font-size: 15px;
+			    font-family: "微软雅黑";
+			    white-space:nowrap;
+			}
+		</style>
+	</div>
+	
+	<div>
+		<h1>white-space:pre保留空格不换行</h1>
+		<div class="wscont1">
+	        	妹纸前端测试white-space属性,我们都是好朋友，春天到了，交配的季节又到了.
+	        white-space属性的keywrod值。<br/>妹纸的学习园地，妹纸的前端乐园。
+		</div>
+		<style type="text/css">
+			.wscont1{
+			    margin:12px;
+			    padding:12px;
+			    width:300px;
+			    background:#f1f1f1;
+			    border:1px solid #bababa;
+			    line-height:32px;
+			    font-size: 15px;
+			    font-family: "微软雅黑";
+			    white-space:nowrap;
+			}
+		</style>
+	</div>
+	
+	<div>
+		<h1>white-space:pre-wrap保留空格换行</h1>
+		<div class="wscont3">
+	        	妹纸前端测试white-space属性,我们都是好朋友，春天到了，交配的季节又到了.
+	        white-space属性的keywrod值。<br/>妹纸的学习园地，妹纸的前端乐园。
+		</div>
+		<style type="text/css">
+			.wscont3{
+			    margin:12px;
+			    padding:12px;
+			    width:300px;
+			    background:#f1f1f1;
+			    border:1px solid #bababa;
+			    line-height:32px;
+			    font-size: 15px;
+			    font-family: "微软雅黑";
+			    white-space:pre-wrap;
+			}
+		</style>
+	</div>
+	
+	
+	<div>
+		<h1>white-space:pre-line合并空格换行</h1>
+		<div class="wscont4">
+	        	妹纸前端测试white-space属性,我们都是好朋友，春天到了，交配的季节又到了.
+	        white-space属性的keywrod值。<br/>妹纸的学习园地，妹纸的前端乐园。
+		</div>
+		<style type="text/css">
+			.wscont4{
+			    margin:12px;
+			    padding:12px;
+			    width:300px;
+			    background:#f1f1f1;
+			    border:1px solid #bababa;
+			    line-height:32px;
+			    font-size: 15px;
+			    font-family: "微软雅黑";
+			    white-space:pre-line;
+			}
+		</style>
+	</div>
+</body>
+</html>
